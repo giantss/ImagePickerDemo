@@ -1,15 +1,8 @@
 ## 安装
 
- - `cordova plugin add https://github.com/giantss/cordova-plugin-ImagePicker.git`
- 
- 或者
- 
- - `cordova plugin add cordova-plugin-imagepicker-plus`
-
+ - `cordova plugin add https://github.com/giantss/ImagePickerDemo.git`
 
 ## 使用
-- `cd /cordova-plugin-ImagePicker/tree/master/example/cordova/ImagePickerDemo/`
-
 
 - `cordova run android/ios`
 
