@@ -1,9 +1,9 @@
 ## 安装
 
- - `cordova plugin add https://github.com/giantss/ImagePickerDemo.git`
+ - `git clone https://github.com/giantss/ImagePickerDemo.git`
 
 ## 使用
-
+- `cd /ImagePickerDemo`
 - `cordova run android/ios`
 
 ## 注：如果执行`cordova run ios`出现
