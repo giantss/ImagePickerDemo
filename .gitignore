@@ -1,0 +1,6 @@
+platforms/*
+plugins/android.json
+plugins/ios.json
+node_modules
+/plugins
+package-lock.json

@@ -1,19 +1,28 @@
 {
-    "cordova-plugin-whitelist": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-whitelist@1"
-        },
-        "is_top_level": true,
-        "variables": {}
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
     },
-    "cordova-plugin-imagepicker-plus": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/giantss/cordova-plugin-ImagePicker.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-android-support-gradle-release": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-android-support-gradle-release"
+    },
+    "is_top_level": true,
+    "variables": {
+      "ANDROID_SUPPORT_VERSION": "27.+"
     }
+  },
+  "cordova-plugin-imagepicker": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/giantss/cordova-plugin-ImagePicker"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
 }
