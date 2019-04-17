@@ -10,7 +10,9 @@
 <body>
 
     <button id="btn1">选择图片(最大1920*1440)</button>
-    <button id="btn2">选择图片(自动宽高)</button>
+    <button id="btn2">选择图片(自动宽高)</button><br><br>
+    <button id="btn3">拍照(最大1920*1440)</button>
+    <button id="btn4">拍照(自动宽高)</button>
 
     <div id="img_list"></div>
 
@@ -29,6 +31,8 @@
             onDeviceReady: function () {
                 document.getElementById('btn1').onclick = Demo.getImage1;
                 document.getElementById('btn2').onclick = Demo.getImage2;
+                document.getElementById('btn3').onclick = Demo.getImage3;
+                document.getElementById('btn4').onclick = Demo.getImage4;
             },
 
             getImage1: function () {
@@ -55,6 +59,26 @@
                     height: -1,
                     quality: 100
                 });
+            },
+
+            getImage3: function () {
+                ImagePicker.takePhoto(function (result) {
+                    Demo.showImage(result);
+                }, function (err) {
+                    alert(err);
+                }, {
+                    width: 1920,
+                    height: 1440,
+                    quality: 50
+                });
+            },
+
+            getImage4: function () {
+                ImagePicker.takePhoto(function (result) {
+                    Demo.showImage(result);
+                }, function (err) {
+                    alert(err);
+                }, {});
             },
 
             showImage: function (result) {
